@@ -1,0 +1,27 @@
+{
+  "name": "@liangshen/cra-template-react-canvas",
+  "version": "18.0.0",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "canvas"
+  ],
+  "description": "创建一个使用Canvas做为渲染引擎的React应用",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liangshen001/cra-template-react-canvas.git"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "devloy": "npm version patch && npm publish --access public ./"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ],
+  "author": "Wang Liang <850598163@qq.com>",
+  "license": "ISC"
+}
