@@ -13,7 +13,7 @@
     "url": "https://github.com/liangshen001/cra-template-react-canvas.git"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=16"
   },
   "scripts": {
     "devloy": "npm version patch && npm publish --access public ./"
