@@ -12,3 +12,19 @@ node v16+
 ```
 npx create-react-app my-app --template @liangshen/react-canvas 
 ```
+因为渲染使用的Canvas而不使用 react-dom 的实现, 安装完后需要去掉 package.json 中的 react-dom 依赖.
+
+## 运行
+
+```
+npm start
+```
+
+
+## 构建库
+
+```
+npm build:lib
+```
+
+
