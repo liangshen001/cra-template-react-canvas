@@ -9,7 +9,7 @@
       "test": "react-scripts test",
       "eject": "react-scripts eject",
       "build:lib": "cross-env NODE_ENV=production rollup -c --bundleConfigAsCjs",
-      "build:lib:without-engine": "cross-env NODE_ENV=production rollup -c rollup.config.without-engine.js --bundleConfigAsCjs"
+      "build:lib:layout-plugin": "cross-env NODE_ENV=production rollup -c rollup.config.layout-plugin.js --bundleConfigAsCjs"
     },
     "devDependencies": {
       "@testing-library/jest-dom": "^5.14.1",
@@ -27,8 +27,10 @@
       "@rollup/plugin-typescript": "^11.1.0",
       "rollup-plugin-clear": "^2.0.7",
       "rollup": "^3.21.6",
-      "cross-env": "^7.0.3",
-      "@liangshen/react-canvas": "^18.0.13",
+      "cross-env": "^7.0.3"
+    },
+    "dependencies": {
+      "@liangshen/react-canvas": "^18.0.14",
       "@liangshen/react-canvas-richtext": "^18.0.7",
       "react": "^18.2.0"
     },
