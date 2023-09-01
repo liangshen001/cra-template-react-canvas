@@ -3,6 +3,8 @@ import {Text, View, Image} from "@liangshen/react-canvas";
 import bgImg from '../download.png'
 import RichText from "@liangshen/react-canvas-richtext";
 
+import Layout from "minigame-canvas-engine";
+
 const containerStyle = {width: '100%', height: '100%'}
 const bodyContainerStyle = (bodyWidth: string, bodyHeight: string): CSSProperties => ({
     width: bodyWidth,
@@ -45,7 +47,7 @@ const rightContainerStyle = {
     marginLeft: '3%'
 }
 const contentStyle: CSSProperties = {
-    width: '66%',
+    width: '58%',
     fontSize: 10,
     height: '100%',
     wordBreak: 'break-all',
@@ -98,9 +100,9 @@ function Notice(props: IAppProps) {
                         )
                     }
                 </View>
-                <View style={rightContainerStyle}>
-                    {/*<RichText text={selectItem.content} style={contentStyle}></RichText>*/}
-                    <Text value={selectItem.content} style={contentStyle}></Text>
+                <View style={rightContainerStyle} id={"container"}>
+                    <RichText value={selectItem.content} style={contentStyle}></RichText>
+                    {/*<Text value={selectItem.content} style={contentStyle}></Text>*/}
                 </View>
             </View>
         </View>
@@ -108,3 +110,4 @@ function Notice(props: IAppProps) {
 }
 
 export default Notice;
+
